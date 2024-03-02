@@ -1,1 +1,8 @@
-<p>recipe-card works!</p>
+<button [routerLink]="['/recipe/',recipe?.id]"  class="h-72 w-64 mx-12 my-10 rounded-3xl shadow-2xl shadow-orange-400 hover:bg-orange-300">
+    <img class="rounded-3xl" src="{{recipe?.image}}" alt="" >
+
+    <h2 class="text-lg font-bold">{{recipe?.name}}</h2>
+    <p class="text-slate-500">{{recipe?.difficulty}}</p>
+    <p class="flex justify-end mb-10 ">{{recipe?.cookTimeMinutes}}min</p>
+
+</button>

@@ -1,1 +1,21 @@
-<p>recipe works!</p>
+<div class="bg-slate-200 shadow-xl rounded-full flex justify-center mb-3">
+    <img class="rounded-3xl w-[700px] h-[700px]" src="{{recipe?.image}}" alt="">
+    <ul>
+        <li>     
+        </li>
+        <li>     <p class="text-3xl">{{recipe?.name}}</p>
+        </li>
+        <li>     <p class="text-xl">{{recipe?.caloriesPerServing}} calories per serving</p>
+        </li>
+
+<li class="text-xl">{{recipe?.cuisine}} Food</li>
+<li><p class="text-xl">Cooking Time:{{recipe?.cookTimeMinutes}}min</p></li><br>
+<li class="text-xl  w-[400px]">{{recipe?.ingredients}}</li>
+<hr class="bg-black"><br>
+<li class="text-xl">Rating:{{recipe?.rating}}</li>
+
+
+
+    </ul>
+     <br>
+    </div>
